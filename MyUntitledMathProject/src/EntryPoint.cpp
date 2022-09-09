@@ -1,13 +1,14 @@
 #include <iostream>
+#include <iomanip>
 
 // Eigen packages
 #include <Eigen/Dense>
 #include <Eigen/Sparse>
 #include <Eigen/Core>
 
-#define QUAD_PRECISION 1
-// Check the quad precision
-#if QUAD_PRECISION
+#define MPIR_PRECISION 1
+// Arbitrary precision
+#if MPIR_PRECISION
 
 // Multiple precision libraries
 #include <mpreal.h>
@@ -32,10 +33,16 @@ using SparseMatrix = Eigen::SparseMatrix<data_type>;
 
 int main(int argc, char* argv[])
 {
-	const int digits = 20;
+	const int digits = 30;
 	mpfr::mpreal::set_default_prec(mpfr::digits2bits(digits));
 
-	data_type value = mpfr::sin(0.50);
-	std::cout << value << std::endl;
+	std::cout << "Checking MPReal\n";
+	data_type value = 2.0 * mpfr::asin(1.0);
+	std::cout << std::setprecision(digits) << "PI = " << value << std::endl << std::endl;
+
+	std::cout << "Checking Eigen\n";
+	DenseMatrix A = DenseMatrix::Random(3, 3);
+	std::cout << "A = \n";
+	std::cout << std::setprecision(digits) << std::scientific << A << std::endl;
 	return 0;
 }
