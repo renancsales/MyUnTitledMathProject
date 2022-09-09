@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\mpfr">
+      <UniqueIdentifier>{97EA7CC1-03A0-F5B6-8C94-EF8DF848ECBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\mpfr\include">
+      <UniqueIdentifier>{0AB9BAEC-761A-98FA-FF87-DEAC6BE8CEB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\mpir">
+      <UniqueIdentifier>{FAEA7CC1-66A0-F5B6-EF94-EF8D5B49ECBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\mpir\include">
+      <UniqueIdentifier>{6D6CDAF8-D9CD-B706-623B-FEB8CE9BEEC5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vendor\mpfr\include\mpfr.h">
+      <Filter>vendor\mpfr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpfr\include\mpreal.h">
+      <Filter>vendor\mpfr\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpir\include\config.h">
+      <Filter>vendor\mpir\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpir\include\gmp-impl.h">
+      <Filter>vendor\mpir\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpir\include\gmp-mparam.h">
+      <Filter>vendor\mpir\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpir\include\gmp.h">
+      <Filter>vendor\mpir\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpir\include\gmpxx.h">
+      <Filter>vendor\mpir\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpir\include\longlong.h">
+      <Filter>vendor\mpir\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpir\include\mpir.h">
+      <Filter>vendor\mpir\include</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\mpir\include\mpirxx.h">
+      <Filter>vendor\mpir\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\EntryPoint.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
